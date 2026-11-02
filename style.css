@@ -1,0 +1,19 @@
+/* 우가 문서 페이지 공통 스타일 (앱 디자인 토큰: ground #F2F4F6, text #191F28, subText #6B7684, primary #3E7C37) */
+:root { --ground: #F2F4F6; --surface: #FFFFFF; --text: #191F28; --sub: #6B7684; --primary: #3E7C37; --line: #E5E8EB; }
+@media (prefers-color-scheme: dark) {
+  :root { --ground: #17171C; --surface: #202027; --text: #ECECEF; --sub: #A0A4AE; --primary: #8FCB7E; --line: #2E2E36; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--ground); color: var(--text); font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+h1 { font-size: 26px; margin: 0 0 4px; }
+.date { color: var(--sub); font-size: 14px; margin: 0 0 24px; }
+section { background: var(--surface); border-radius: 16px; padding: 20px; margin: 0 0 12px; }
+h2 { font-size: 18px; margin: 0 0 8px; }
+p, li { margin: 0 0 6px; }
+ul { padding-left: 20px; margin: 0; }
+table { width: 100%; border-collapse: collapse; font-size: 15px; }
+th, td { text-align: left; padding: 8px 6px; border-top: 1px solid var(--line); vertical-align: top; }
+th { color: var(--sub); font-weight: 600; }
+a { color: var(--primary); }
+nav { display: flex; gap: 16px; margin: 0 0 24px; font-size: 14px; }
